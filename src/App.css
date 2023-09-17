@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Landing{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 20px;
+  gap:20px;
+  font-size: 20px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.TestPage{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  gap:20px;
+  font-size: 20px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.FinishPage{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  gap:20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.question-number{
+  padding: 10px;
+  border-radius: 2px;
+  background-color: grey;
+  margin-right: 5px;
+}
+
+.question-number:hover, button:hover{
+  opacity: 50%;
+  cursor: pointer
+}
+
+.select-questions{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+input:hover{
+  opacity: 50%;
+}
+
+#name{
+  border-radius: 10px;
+  height: 50px; 
+  padding: 0px 20px;
+}
+
+button{
+  padding: 10px 20px;
+  margin: 20px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+.note{
+  justify-self: flex-end;
+}
+
+@media (min-width: 768px) {
+  .select-questions {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
