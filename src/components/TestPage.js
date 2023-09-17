@@ -21,7 +21,7 @@ function TestPage(
     }, 1000);
 
     return () => clearInterval(timerInterval);
-  }, [currentQuestion]);
+  });
 
   const handleNextQuestion = () => {
       setCurrentQuestion(currentQuestion + 1);
